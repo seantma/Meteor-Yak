@@ -4,11 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- bass css, object oriented grid framework -->
-    <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.0/basscss.min.css" rel="stylesheet">
     <!-- tackyons css for sizing/space/typography -->
-    <!-- <link rel="stylesheet" href="tachyons.css" type="text/css"> -->
-    <!-- specific type face -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Merriweather:400,300,700|Source+Sans+Pro:100,300,400,600' rel='stylesheet' type='text/css'>
+
 
 
 
@@ -19,8 +16,9 @@
     <header class="header clearfix mx-auto col-11 lg-col-8 mvxl">
         <a href="/"><img class="db center ptm fl-m fl-l mw5  " src="welby.svg" alt="logo"/></a>
 
-        <p class="black f3 fr-m fr-l tc" >Email us: <a class="fr-m fr-l" href="mailto:hello@welby.io">hello@welby.io</a></p>  
-
+        <!-- Evan: using a template to display the logout near the top -->
+          {{> signout}} 
+            
     </header>
 
 <!-- 
