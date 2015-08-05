@@ -1,5 +1,5 @@
 Template.wellnessList.helpers({
 	yaks: function() {
-		return Yaks.find({}, {sort : {score: -1}});
+		return WellnessYaks.find({}, {sort : {score: -1}});
 	}
 })
