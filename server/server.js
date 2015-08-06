@@ -7,9 +7,14 @@ Meteor.methods({
 		});
 	}, 
 
+		wellnessInsert: function(yak) {
+		var postId = WellnessYaks.insert({
+			yak : yak, 
+			score : 0, 
+			submitted : new Date(), 
+		});},  
+
 	commentInsert: function(comment) {
 		Comments.insert(comment);
 	}
-
-	
 });
