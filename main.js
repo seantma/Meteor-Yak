@@ -1,6 +1,9 @@
 Yaks = new Meteor.Collection('yaks');
+WellnessYaks = new Meteor.Collection('wellnessyaks');
 
 Comments = new Mongo.Collection("comments");
+WellnessComments = new Mongo.Collection("wellnesscomments");
+
 
 Router.route('/', {name: 'accounts'})
 
